@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-sm-12 col-md-8">
+        <div class="list-group">
+            <a class="list-group-item" routerLink="/users/{{user.id}}/{{user.name}}" *ngFor="let user of users">
+                {{user.name}}
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-8">
+        <app-view-users></app-view-users>
+    </div>
+</div>
